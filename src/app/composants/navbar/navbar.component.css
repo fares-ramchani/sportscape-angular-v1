@@ -21,6 +21,7 @@ margin-left: 4%;
 }
 
 .navBar{
+height: 8vh;
 width: 100%;
 display: flex;
 justify-content: space-between;
@@ -29,10 +30,10 @@ background: black;
 }
 
 
+
 .img1{
 width: 90px;
-height: 50px;
-
+height: 90px;
 }
 
 .partier1{
@@ -47,13 +48,21 @@ margin-left: 4px;
     align-items: center;
    
 }
-a{
+.a{
    margin-left: 18px;
    font-size: 18px;
    font-weight: bold;
    color: aliceblue;
    text-decoration: none;
     
+}
+.a1{
+  margin-left: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(14, 15, 15);
+  text-decoration: none;
+   
 }
 .partier3{
     display: flex;
@@ -280,6 +289,48 @@ a:hover{
         display: none;
     }
     
+    }
+    .navcollapsse{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      background-color: #3230301b;
+      height: 88vh;
+      position: absolute;
+     
+
+    }
+    .navcollapsse1{
+      height: 0;
+      transition: all 0.2s ;
+      .partier2collapsse{
+        display: none;
+        
+      }
+      .partier3collapsse{
+        display: none;
+      }
+    }
+    .partier3collapsse{
+      width: 84%;
+    }
+    .partier3-1collapsse{
+      
+      
+    }
+    .itemnavcollapsse{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      height: 35px;
+      width:fit-content;
+      padding-right: 20px;
+    }
+    .partier2collapsse{
+      width: 84%;
+      background-color: white;
+
     }
 
 .button-7777 {

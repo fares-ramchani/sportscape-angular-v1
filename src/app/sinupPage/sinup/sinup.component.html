@@ -1,0 +1,58 @@
+<body>
+
+
+    <div class="container">
+        <div class="title">Commencer!!</div>
+        <div class="title" style="font-weight:lighter; font-size: 16px; margin-top: 10px;">utilisez votre profil social
+            pour vous inscrire</div>
+        <div class="button input">
+            <div class="input" style="display: flex; justify-content: center;align-items: center;">
+                <img src="../../../assets/images/imagesloginePage/google-icon.png" width="20px" alt=""
+                    style="margin-right: 10px;">
+                Google
+            </div>
+
+        </div>
+        <div class="title" style="font-weight:lighter; font-size: 16px; margin-top: 10px;">OU</div>
+        <div class="content">
+            <form novalidate>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">nom</span>
+                        <input type="text" placeholder="nom" formControlName="ip" required>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">prenom </span>
+                        <input type="text" placeholder="prenom" formControlName="port" required>
+
+                    </div>
+                </div>
+                <div class="user-details user-details2">
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Email" formControlName="etat" required>
+
+                    </div>
+
+
+                </div>
+                <div class="user-details user-details2">
+                    <div class="input-box">
+                        <span class="details">Mot de passe</span>
+                        <input type="text" placeholder="Mot de passe" formControlName="etat" required>
+
+                    </div>
+
+
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+
+            </form>
+            <div class="title" style="font-weight:lighter; font-size: 16px; margin-top: 10px;">Déjà inscrit? 
+                <span style="margin-left: 5px;"><a routerLink="/login"> S'identifier</a></span></div>
+        </div>
+    </div>
+</body>

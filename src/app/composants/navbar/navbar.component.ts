@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  closenav:boolean=false
   closepopup() {
-   
-   
+    this.closenav=!this.closenav
   }
   Deconnexion(){
    

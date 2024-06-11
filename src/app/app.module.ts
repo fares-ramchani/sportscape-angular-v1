@@ -17,6 +17,9 @@ import { FooterComponent } from './composants/footer/footer.component';
 import { ComposantspartenaireComponent } from './AccueilPage/composantsAccueil/composant_6/composantspartenaire/composantspartenaire.component';
 import { CarouselevenementsComponent } from './AccueilPage/composantsAccueil/composant_3/carousel-evenements/carouselevenements.component';
 import { Composant4Component } from './AccueilPage/composantsAccueil/composant_4/composant4/composant4.component';
+import { LoginComponent } from './loginPage/login/login.component';
+import { SinupComponent } from './sinupPage/sinup/sinup.component';
+import { ContactComponent } from './contactPage/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { Composant4Component } from './AccueilPage/composantsAccueil/composant_4
     Composant6Component,
     NavbarComponent,
     FooterComponent,
-    ComposantspartenaireComponent
+    ComposantspartenaireComponent,
+    LoginComponent,
+    SinupComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
