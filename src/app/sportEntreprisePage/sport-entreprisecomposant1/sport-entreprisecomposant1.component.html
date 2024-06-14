@@ -1,9 +1,19 @@
-<app-navbar></app-navbar>
+
 <div class="partierr1">
     <div class="partier1-1">
         <div class="partier1-1-1" >
-            <h4 style="margin-top: 200px;"><span style="color: rgb(13, 177, 32); font-size: 45px;">CONTACTEZ</span><br>
-                <span style="color: rgb(162, 238, 48); font-size: 45px;">NOUS</span></h4>
+            <div style="margin-top: 300px; ">
+                <h4 ><span style="color: rgb(13, 177, 32); font-size: 45px;">DEMANDE
+                </span><br>
+                 <span style="color: rgb(13, 177, 32); font-size: 45px;"> DE DEVIS</span></h4><br>
+                 <h6 style="margin-bottom: 50px;" >
+                     <span style="color: rgba(255, 255, 255, 0.826); font-size: 18px; font-weight: lighter;">Améliorer le rendement de vos employés
+                     </span><br>
+                     <span style="color: rgba(255, 255, 255, 0.826); font-size: 18px;  font-weight: lighter;">en réservant votre convention.
+                     </span>
+               </h6>
+            </div>
+           
         </div>
        
 
@@ -36,51 +46,54 @@
            
     
                 <div class="container">
-                    <div class="title" style="font-weight:lighter; font-size: 16px; margin-top: 10px;">Info Générale 
+                    <div class="title" style="margin-bottom: 30px; font-weight:bold; font-size: 16px; margin-top: 10px;">Contact
                         </div>
                     <div class="content">
                         <form novalidate>
                             <div class="user-details">
                                 <div class="input-box">
-                                    <span class="details">nom</span>
-                                    <input type="text" placeholder="nom" formControlName="ip" required>
+                                   
+                                    <input type="text" placeholder="Entreprise" formControlName="Entreprise" required>
             
                                 </div>
                                 <div class="input-box">
-                                    <span class="details">prenom </span>
-                                    <input type="text" placeholder="prenom" formControlName="port" required>
+                                  
+                                    <input type="text" placeholder="Responsable" formControlName="Responsable" required>
             
                                 </div>
                             </div>
                             <div class="user-details">
                                 <div class="input-box">
-                                    <span class="details">nom</span>
-                                    <input type="text" placeholder="nom" formControlName="ip" required>
+                                 
+                                    <input type="text" placeholder="E-mail" formControlName="mail" required>
             
                                 </div>
                                 <div class="input-box">
-                                    <span class="details">prenom </span>
-                                    <input type="text" placeholder="prenom" formControlName="port" required>
+                                    
+                                    <input type="text" placeholder="N°Tel" formControlName="tel" required>
             
                                 </div>
                             </div>
-                            <div class="user-details user-details2">
-                                <div class="input-box">
-                                    <span class="details">Email</span>
-                                    <input type="text" placeholder="Email" formControlName="etat" required>
-            
-                                </div>
-            
-            
+                            <div style="margin-bottom: 30px; font-weight:lighter; font-size: 16px; margin-top: 10px;"><span style="font-weight: bold;">Info générales </span><br>
+                                <span>de votre convention</span> 
                             </div>
-                            <div class="user-details user-details2">
+                           
+                            <div class="user-details user-details2" style="margin-bottom: 20px;">
                                 <div class="input-box">
-                              <textarea placeholder="tapez ici votre message " name="" id="" style="width: 100%; height: 60px;"></textarea>
+                                    <input type="text" placeholder="Activité sportive" formControlName="ActivitéSportive" required>
             
                                 </div>
             
             
                             </div>
+                            <div class="user-details user-details2">
+                                <div class="input-box">
+                              <textarea placeholder="tapez vos adresses souhaités, nombre des séances par semaine,les horaires préférés ainsi que la période de la convention  " name="" id="" style="width: 100%; height: 60px;"></textarea>
+            
+                                </div>
+            
+            
+                            </div>  
                             <div class="button">
                                 <input type="submit" value="Register">
                             </div>
@@ -93,5 +106,3 @@
        
 
     </div>
-
-<app-footer></app-footer>

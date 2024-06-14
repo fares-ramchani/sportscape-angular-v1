@@ -20,6 +20,9 @@ import { Composant4Component } from './AccueilPage/composantsAccueil/composant_4
 import { LoginComponent } from './loginPage/login/login.component';
 import { SinupComponent } from './sinupPage/sinup/sinup.component';
 import { ContactComponent } from './contactPage/contact/contact.component';
+import { SportEntrepriseComponent } from './sportEntreprisePage/sport-entreprise/sport-entreprise.component';
+import { SportEntreprisecomposant2Component } from './sportEntreprisePage/sport-entreprisecomposant2/sport-entreprisecomposant2.component';
+import { SportEntreprisecomposant1Component } from './sportEntreprisePage/sport-entreprisecomposant1/sport-entreprisecomposant1.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { ContactComponent } from './contactPage/contact/contact.component';
     ComposantspartenaireComponent,
     LoginComponent,
     SinupComponent,
-    ContactComponent
+    ContactComponent,
+    SportEntrepriseComponent,
+    SportEntreprisecomposant2Component,
+    SportEntreprisecomposant1Component
   ],
   imports: [
     BrowserModule,

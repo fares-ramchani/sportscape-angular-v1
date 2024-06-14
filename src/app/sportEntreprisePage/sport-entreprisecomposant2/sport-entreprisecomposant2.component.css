@@ -1,0 +1,83 @@
+.partier{
+    width: 100%;
+    height: 100vh;
+    background: url(../../../assets/images/imagesSportEntreprise/imagescomposant2/backgroundcomposant2.jpg) no-repeat;
+    background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+}
+.partier1{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+  
+   
+  
+}
+.partier2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.partier3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+}
+.partier1-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.partier1-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    margin-bottom: 30px;
+}
+.partier2-f{
+display: none;
+}
+
+@media screen and (max-width:768px) {
+    .partier {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 150vh;
+      
+    }
+    .partier3{
+        margin-bottom: 80px;
+    }
+    .partier1{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:575px) {
+    .partier {
+      justify-content: space-evenly;
+      
+    }
+    .partier3{
+        margin-bottom: 10px;
+    }
+    .partier1{
+        margin-top: 10px;
+    }
+    .partier2-f{
+        margin-top: 20px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .partier2{
+        display: none;
+    }
+}
