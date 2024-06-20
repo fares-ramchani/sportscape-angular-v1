@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.titre1 {
+  color: rgb(114, 180, 56);
+}
+.titre2 {
+  color: rgb(255, 255, 255);
+}
+h1 {
+  line-height: 0.8;
+  font-size: 50px;
+  margin: 0;
+}
+
+.buttom {
+  border: 1px solid white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 30px;
+  margin-top: 30px;
+}
+.form-group {
+  background-color: transparent;
+  display: flex;
+  flex: 1fr 1fr;
+  flex-direction: column;
+}
+p {
+  color: white;
+  margin-bottom: 3px;
+}
+.form2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensures the parent div takes up the full width of its container */
+  max-width: 600px; /* Optional: Set a max-width to control the container's maximum size */
+  margin: 0 auto;
+}
+button {
+  /* width: auto; */
+  background-color: rgb(114, 180, 56);
+  margin-top: 15px;
+  height: 35px;
+  color: white;
+  border-radius: 5px;
+  border-color: rgb(114, 180, 56);
+  width: 100%;
+}
+select,
+input {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 15px;
+  height: 40px;
+  width: 100%;
+}
+select {
+  width: 100%;
+}
+
+/* .form2 select{
+  width: 200%;
+} */
+img {
+  width: auto;
+  height: 50%;
+  margin-right: 5px;
+}

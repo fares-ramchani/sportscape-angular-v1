@@ -1,1 +1,19 @@
-<p>carousel-activites works!</p>
+<div class="main">
+    <div class="container">
+        <h2>NOS ACTIVITÉS</h2>
+        <div class="carousel-container">
+            <button (click)="prev()" aria-label="Previous" class="nav-button prev-button">&lt;</button>
+            <div class="carousel-wrapper">
+                <div class="carousel-content" [style.transform]="transformStyle">
+                    <div class="carousel-card" *ngFor="let card of cards">
+                        <div>
+                            <h5>{{ card.title }}</h5>
+                            <img [src]="card.image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button (click)="next()" aria-label="Next" class="nav-button next-button">&gt;</button>
+        </div>
+    </div>
+</div>
