@@ -8,23 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class CarouselActivitesComponent implements OnInit {
   cards = [
     {
-      title: 'football',
+      title: 'FOOTBALL',
       image: '/assets/images/accueil/composant3/imageactivite/football.png',
     },
     {
-      title: 'basketball',
+      title: 'BASKETBALL',
       image: '/assets/images/accueil/composant3/imageactivite/basketball.png',
     },
     {
-      title: 'handball',
+      title: 'HANDBALL',
       image: '/assets/images/accueil/composant3/imageactivite/handball.png',
     },
     {
-      title: 'natation',
+      title: 'NATATION',
       image: '/assets/images/accueil/composant3/imageactivite/natation.png',
     },
     {
-      title: 'volleyball',
+      title: 'VOLLEYBALL',
       image: '/assets/images/accueil/composant3/imageactivite/volleyball.png',
     },
   ];

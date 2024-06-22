@@ -6,7 +6,6 @@
   width: 100%;
   overflow: hidden;
   padding: 10px;
-  /* height: 50vh; */
 }
 
 .carousel-wrapper {
@@ -16,7 +15,7 @@
 
 .carousel-content {
   display: flex;
-  transition: transform 1s ease; 
+  transition: transform 1s ease;
 }
 
 .carousel-card {
@@ -47,7 +46,6 @@
   color: white;
 }
 .main {
-  /* background-color: grey; */
   margin: 0;
   padding-top: 40px;
 }
@@ -62,6 +60,7 @@
 }
 h5 {
   color: white;
+  font-weight: bold;
 }
 
 .nav-button {
@@ -75,18 +74,9 @@ h5 {
   z-index: 1;
 }
 h2 {
-  /* padding-top: 50px; */
   color: rgb(114, 180, 56);
   font-weight: bold;
 }
-/*   
-    .prev-button {
-      left: 10px;
-    }
-    
-    .next-button {
-      right: 10px;
-    } */
 
 /* Responsive design */
 @media (max-width: 768px) {

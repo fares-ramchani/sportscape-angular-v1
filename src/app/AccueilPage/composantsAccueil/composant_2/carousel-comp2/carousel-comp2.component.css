@@ -1,113 +1,220 @@
 .main {
-  font-family: sans-serif;
   margin: 0;
-  padding: 0;
-  /* background-color: #f0f0f0; */
+  padding-top: 40px;
 }
-.container {
-  width: 90%;
-  /* max-width: 1200px; */
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.cards {
+.carousel-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-content {
+  display: flex;
+  transition: transform 1s ease;
+}
+.carousel-card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 350px;
+  margin: 0 35px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.prev-button {
+  left: 0px;
+  color: white;
+}
+.next-button {
+  right: 0px;
+  color: white;
 }
 
-.card {
-  width: calc(100% - 20px);
-  /* margin-bottom: 20px; */
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+img {
+  width: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+/* ****************************** main card ****************************** */
+.maincard {
+  display: flex;
+  flex-direction: column;
+}
+.top{
+  height: 180px;
+  background-image: url("/assets/images/accueil/composant2/sport.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* main card 4 div details column */
+.bottom {
+  padding: 0px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.imagesport {
+  height: 180px;
+  object-fit: contain;
+  width: 200px;
+}
+/* content of div image */
+/* .imagesport {
+  height: 180px;
+  width: 200px;
+  object-fit: cover;
+} */
+/* end div image */
+.titre {
+  display: flex;
+  height: 70px;
   position: relative;
 }
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+/* titre details 2 div row(logostade, descriptionstade) and 2nd div(descriptionstade) 3 div columns(etoile, nomstade, activite) */
+.logostade {
+  width: 40%;
 }
-
-.card-content {
-  padding: 20px;
+.imagelogostade {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -26px;
+  left: 10px;
+  z-index: 2;
 }
-
-.star-rating {
-  color: #ffc107;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 5px;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-.details {
+.descriptionstade {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  flex-direction: column;
+  width: 60%;
 }
-
+/* 3 comlumns */
+.etoile {
+  width: 100px;
+  height: 20px;
+}
+.nomstade {
+  font-size: 14px;
+  color: black;
+  font-weight: bolder;
+  text-align: left;
+  line-height: 0.9;
+  padding: 5px 0 3px 8px;
+}
+.activite {
+  z-index: 1;
+  color: gray;
+  font-size: 14px;
+  text-align: left;
+  padding: 0 0 3px 8px;
+}
+/* end titre details */
 .detail {
+  height: 50px;
+  display: flex;
+}
+.temps {
+  width: 30%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+}
+.imagetemps {
+  width: 25px;
+  height: 25px;
+  /* display: flex; */
+}
+.nombreparticipante {
+  width: 30%;
   display: flex;
   align-items: center;
 }
 
-.detail img {
-  width: 20px;
-  margin-right: 5px;
-}
-
-.price {
+.imagelocalisation {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
 
+}
+.imglocalisation,
+.imgparticipante {
+  width: 25px;
+  height: 25px;
+}
+.localisation {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
 .button {
-  background-color: #4caf50;
-  color: rgb(53, 35, 216);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  height: 20%;
+}
+/* button style */
+.reserver {
+  width: 80%;
+  background-color: rgb(114, 180, 56);
+  color: white;
+  padding: 2px;
+  margin-top: 4px;
+  font-size: 18px;
+  border: 1px solid green;
+  border-radius: 4px;
+}
+/* end button style */
+p {
+  text-align: center;
+  margin: 0;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+  .carousel-card {
+    width: 50%;
+  }
 
+  .nav-button {
+    font-size: 1.5rem;
+  }
+
+  .prev-button {
+    left: 5px;
+  }
+
+  .next-button {
+    right: 5px;
+  }
 }
-.carousel-inner {
-  display: flex;
-  /* flex-direction: column; */
-}
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  background-color: red;
-  color: #2007ff;
-  z-index: 2;
-}
-.carousel-control-next-icon{
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  color: green;
-}
-.carousel-control-prev-icon{
-  position: absolute;
-  left: -30px;
-  top: 50%;
+
+@media (max-width: 480px) {
+  .carousel-card {
+    width: 40%;
+  }
+
+  .nav-button {
+    font-size: 1.2rem;
+  }
+
+  .prev-button {
+    left: 2px;
+  }
+
+  .next-button {
+    right: 2px;
+  }
 }

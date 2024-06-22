@@ -1,126 +1,114 @@
 .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding: 10px;
-    /* height: 50vh; */
-  }
-  
-  .carousel-wrapper {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel-content {
-    display: flex;
-    transition: transform 1s ease; 
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.carousel-card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 130px;
+  margin: 0 35px;
+  background: #17061abd;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container {
+  margin: 0 100px;
+}
+.prev-button {
+  left: 0px;
+  color: white;
+}
+.next-button {
+  right: 0px;
+  color: white;
+}
+.main {
+  margin: 0;
+  padding-top: 40px;
+}
+.reserver {
+  width: 100%;
+  background-color: rgb(114, 180, 56);
+  color: white;
+  padding: 6px;
+  font-size: 16px;
+  border: 1px solid green;
+  border-radius: 4px;
+}
+h6 {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+h2 {
+  color: rgb(114, 180, 56);
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   .carousel-card {
-    flex: 0 0 auto;
-    width: 200px;
-    height: 130px;
-    margin: 0 35px;
-    background: #17061abd;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 50%;
   }
-  .container {
-    margin: 0 100px;
-  }
-  
-  .prev-button {
-    left: 0px;
-    color: white;
-  }
-  
-  .next-button {
-    right: 0px;
-    color: white;
-  }
-  .main {
-    margin: 0;
-    padding: 50px 0;
-  }
-  .reserver {
-    width: 100%;
-    background-color: rgb(114, 180, 56);
-    color: white;
-    padding: 6px;
-    font-size: 16px;
-    border: 1px solid green;
-    border-radius: 4px;
-  }
-  h6 {
-    color: white;
-  }
-  
+
   .nav-button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+    font-size: 1.5rem;
   }
-  h2 {
-    /* padding-top: 50px; */
-    color: rgb(114, 180, 56);
-    font-weight: bold;
+
+  .prev-button {
+    left: 5px;
   }
-  /*   
-      .prev-button {
-        left: 10px;
-      }
-      
-      .next-button {
-        right: 10px;
-      } */
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .carousel-card {
-      width: 50%;
-    }
-  
-    .nav-button {
-      font-size: 1.5rem;
-    }
-  
-    .prev-button {
-      left: 5px;
-    }
-  
-    .next-button {
-      right: 5px;
-    }
+
+  .next-button {
+    right: 5px;
   }
-  
-  @media (max-width: 480px) {
-    .carousel-card {
-      width: 40%;
-    }
-  
-    .nav-button {
-      font-size: 1.2rem;
-    }
-  
-    .prev-button {
-      left: 2px;
-    }
-  
-    .next-button {
-      right: 2px;
-    }
+}
+
+@media (max-width: 480px) {
+  .carousel-card {
+    width: 40%;
   }
-  
+
+  .nav-button {
+    font-size: 1.2rem;
+  }
+
+  .prev-button {
+    left: 2px;
+  }
+
+  .next-button {
+    right: 2px;
+  }
+}
