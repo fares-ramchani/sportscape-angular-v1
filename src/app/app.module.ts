@@ -23,7 +23,12 @@ import { ContactComponent } from './contactPage/contact/contact.component';
 import { SportEntrepriseComponent } from './sportEntreprisePage/sport-entreprise/sport-entreprise.component';
 import { SportEntreprisecomposant2Component } from './sportEntreprisePage/sport-entreprisecomposant2/sport-entreprisecomposant2.component';
 import { SportEntreprisecomposant1Component } from './sportEntreprisePage/sport-entreprisecomposant1/sport-entreprisecomposant1.component';
-
+import { PartenaireComponent } from './partenairePage/partenaire/partenaire.component';
+import { Composant1partenaireComponent } from './partenairePage/composantpartenairePage/composant1partenaire/composant1partenaire.component';
+import { Composant2partenaireComponent } from './partenairePage/composantpartenairePage/composant2partenaire/composant2partenaire.component';
+import { GoogleMapsModule } from '@angular/google-maps'
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,12 +51,19 @@ import { SportEntreprisecomposant1Component } from './sportEntreprisePage/sport-
     ContactComponent,
     SportEntrepriseComponent,
     SportEntreprisecomposant2Component,
-    SportEntreprisecomposant1Component
+    SportEntreprisecomposant1Component,
+    PartenaireComponent,
+    Composant1partenaireComponent,
+    Composant2partenaireComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    GoogleMapsModule,
+    FormsModule,
+    ReactiveFormsModule
+
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

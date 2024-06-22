@@ -5,13 +5,16 @@ import { LoginComponent } from './loginPage/login/login.component';
 import { SinupComponent } from './sinupPage/sinup/sinup.component';
 import { ContactComponent } from './contactPage/contact/contact.component';
 import { SportEntrepriseComponent } from './sportEntreprisePage/sport-entreprise/sport-entreprise.component';
+import { Composant1partenaireComponent } from './partenairePage/composantpartenairePage/composant1partenaire/composant1partenaire.component';
+import { PartenaireComponent } from './partenairePage/partenaire/partenaire.component';
 
 const routes: Routes = [
   {path :"sportEntreprise" ,component:SportEntrepriseComponent},
   {path :"contact" ,component:ContactComponent},
   {path :"login" ,component:LoginComponent},
   {path :"sinup" ,component:SinupComponent},
-  {path :"" ,component:ContactComponent},
+  {path :"partenaire" ,component:PartenaireComponent},
+  {path :"" ,component:PartenaireComponent},
 ];
 
 @NgModule({
