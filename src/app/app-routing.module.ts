@@ -7,9 +7,11 @@ import { ContactComponent } from './contactPage/contact/contact.component';
 import { SportEntrepriseComponent } from './sportEntreprisePage/sport-entreprise/sport-entreprise.component';
 import { Composant1partenaireComponent } from './partenairePage/composantpartenairePage/composant1partenaire/composant1partenaire.component';
 import { PartenaireComponent } from './partenairePage/partenaire/partenaire.component';
+import { AccueilComponent } from './AccueilPage/accueil/accueil.component';
 
 const routes: Routes = [
   {path :"sportEntreprise" ,component:SportEntrepriseComponent},
+  {path :"accueil" ,component:AccueilComponent},
   {path :"contact" ,component:ContactComponent},
   {path :"login" ,component:LoginComponent},
   {path :"sinup" ,component:SinupComponent},
