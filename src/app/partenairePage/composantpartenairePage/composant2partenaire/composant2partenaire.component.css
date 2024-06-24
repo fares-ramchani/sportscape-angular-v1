@@ -1,0 +1,187 @@
+.body{
+    width: 100%;
+    min-height: 180vh;
+    background: url(../../../../assets/images/imagepartenairePage/imagecomposant2partenaire/backgrouncomposants2partenai.png) no-repeat;
+    background-size: cover;
+        display: flex;
+     
+        flex-direction: column;
+        justify-content: space-evenly;
+}
+.partier{
+    width: 100%;
+    min-height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+}
+.partier1{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+  
+   
+  
+}
+.partier2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 330px;
+}
+.partier3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+}
+.partier1-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.partier1-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    margin-bottom: 30px;
+}
+.partier2-f{
+display: none;
+}
+.h1{
+    margin-left: 185px;
+}
+
+@media screen and (max-width:768px) {
+    .partier {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 150vh;
+      
+    }
+    .partier2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .partier3{
+        margin-bottom: 80px;
+    }
+    .partier1{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:575px) {
+    .partier {
+      justify-content: space-evenly;
+      
+    }
+    .partier3{
+        margin-bottom: 10px;
+    }
+    .partier1{
+        margin-top: 10px;
+    }
+    .partier2-f{
+        margin-top: 20px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .partier2{
+        display: none;
+    }
+}
+.partier4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.partier4-2{
+    display: flex;
+    justify-content: center;
+   
+}
+.card1{
+    width: 350px;
+    height: 450px;
+    background-color: rgba(240, 255, 255, 0.796);
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ 
+}
+.card2{
+    width: 350px;
+    height: 530px;
+    background-color: rgba(240, 255, 255, 0.796);
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card3{
+    width: 350px;
+    height: 450px;
+    background-color: rgba(240, 255, 255, 0.796);
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media screen and (max-width:1199px) {
+ .card1,.card2,.card3{
+width: 300px;
+ }
+
+}
+@media screen and (max-width:992px) {
+    .card1,.card2,.card3{
+   width: 250px;
+    }
+   
+   }
+   @media screen and (max-width:768px) {
+  
+   .partier4-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .card1,.card2,.card3{
+    width: 450px;
+     }
+     .card2{
+        height: 450px;
+     }
+     .card1{
+        margin-bottom: 30px;
+     }
+     .img{
+        display: none;
+     }
+   }
+   @media screen and (max-width:470px) {
+  
+   
+    .card1,.card2,.card3{
+     width: 300px;
+      }
+      .h1{
+        margin-left: 0px;
+        text-align: center;
+      }
+
+    }
+    .partier4-1{height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
