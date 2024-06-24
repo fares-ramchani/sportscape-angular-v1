@@ -1,0 +1,41 @@
+/* *************** large screens (min width 768px) *************** */
+@media screen and (min-width: 768px) {
+    .main {
+      display: grid;
+      grid-template-columns: repeat(4, 200px);
+      grid-template-rows: repeat(2, 100px);
+      justify-content: center;
+      align-items: center;
+    }
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 200px;
+      height: 50px;
+      display: flex;
+    }
+  }
+
+/* *************** small screens (max width 767px) *************** */
+@media screen and (max-width: 767px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 100px;
+    height: 50px;
+    display: flex;
+  }
+}

@@ -1,0 +1,14 @@
+.main {
+  background-image: url("/assets/images/accueil/composant4/bgfooter.jpg");
+  background-size: cover;
+  height: 90vh;
+  /* width: auto; */
+}
+.container {
+  display: flex;
+  padding: 30px;
+}
+.leftside,
+.rightside {
+  width: 50%;
+}

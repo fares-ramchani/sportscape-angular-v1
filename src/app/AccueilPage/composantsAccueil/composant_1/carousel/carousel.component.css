@@ -1,0 +1,26 @@
+.main {
+  padding: 0 20px;
+  height: 100%;
+  position: relative;
+}
+img {
+  object-fit: contain;
+  width: 540px;
+  height: 520px;
+}
+.carousel-indicators{
+  margin-top: 400px;
+}
+.carousel-indicators > button {
+  background-color: transparent;
+  height: 5px;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+.carousel-indicators > button.active {
+  background-color: yellow;
+  height: 5px;
+  border: 2px solid yellow;
+  border-radius: 2px;
+  width: 30px;
+}

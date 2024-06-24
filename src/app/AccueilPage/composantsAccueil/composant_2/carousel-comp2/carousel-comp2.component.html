@@ -1,0 +1,75 @@
+<div class="main">
+    <div class="container">
+        <div class="carousel-container">
+            <button (click)="prev()" aria-label="Previous" class="nav-button prev-button">&lt;</button>
+            <div class="carousel-wrapper">
+                <div class="carousel-content" [style.transform]="transformStyle">
+                    <div class="carousel-card" *ngFor="let card of cards">
+                        <div class="maincard">
+                            <!-- <div class="image"><img [src]="card.image"></div> -->
+                            <div class="top">
+                                <!-- <img src="/assets/images/accueil/composant2/sport.png" class="imagesport"> -->
+                            </div>
+                            <div class="bottom">
+                                <div class="titre">
+                                    <div class="logostade">
+                                        <img src="/assets/images/accueil/composant2/logostade.jpg"
+                                            class="imagelogostade">
+                                    </div>
+                                    <div class="descriptionstade">
+                                        <div class="etoile"><img src="/assets/images/accueil/composant2/etoile.png">
+                                        </div>
+                                        <div class="nomstade">Bébé Nageur - Fit Factory</div>
+                                        <div class="activite">FOOTBALL</div>
+                                        <!-- <h5>{{ card.title }}</h5> -->
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="temps">
+                                        <div class="imagetemps"><img src="/assets/images/accueil/composant2/temps.png">
+                                        </div>
+                                        <div>
+                                            <p style="  font-size: 16px;
+                                            color:  rgb(114, 180, 56);
+                                            font-weight: bold;">75</p>
+                                            <p style="font-size: 12px;
+                                            color:  grey;
+                                           ">min</p>
+                                        </div>
+                                    </div>
+                                    <div class="nombreparticipante">
+                                        <div class="imagenombreparticipante"><img
+                                                src="/assets/images/accueil/composant2/participante.png"
+                                                class="imgparticipante">
+                                        </div>
+                                        <div>
+                                            <p style="  font-size: 16px;
+                                            color:  rgb(114, 180, 56);
+                                            font-weight: bold;">12</p>
+                                            <p style="font-size: 8px;
+                                            color:  grey;
+                                           ">particip..</p>
+                                        </div>
+                                    </div>
+                                    <div class="localisation">
+                                        <div class="imagelocalisation"><img
+                                                src="/assets/images/accueil/composant2/localisation.png"
+                                                class="imglocalisation">
+                                        </div>
+                                        <div>
+                                            <p style="font-size: 14px;
+                                            color:  grey;
+                                           ">Tunis</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button"><button class="reserver">Réserver</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button (click)="next()" aria-label="Next" class="nav-button next-button">&gt;</button>
+        </div>
+    </div>
+</div>
