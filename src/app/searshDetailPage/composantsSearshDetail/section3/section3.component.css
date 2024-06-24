@@ -1,0 +1,150 @@
+html,
+body {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.font-weight-bold{
+    font-weight: 700 !important;
+}
+.detail{
+    display: flex;
+}
+.descriptionDetaille{
+    width: 70%;
+}
+.trouver{
+    width: 50%;
+    padding-left: 180px;
+}
+p{
+    font-size: 14px !important;
+    text-align: justify;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+button{
+    outline: none !important;
+    text-transform: none;
+    overflow: visible;
+    margin-left: 0px;
+    padding: 0 !important;
+    font-family: inherit;
+    box-shadow: none !important;
+    display: inline-block;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+button:not(:disabled) {
+    cursor: pointer;
+}
+button img{
+    vertical-align: middle;
+    border-style: none;
+    overflow: clip;
+}
+.blocs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    width: 60%;
+}
+.bloc {
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 0;
+    box-sizing: border-box;
+}
+.vertical-line {
+    border: 2px solid black;
+    height: 30px;
+    position: absolute;
+
+}
+.phrase{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: black;
+}
+.vertical-line-final-section{
+    border: 2px solid black;
+    height: 45px;
+    position: absolute;
+}
+.ligne{
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 3px;
+    background: #5c5c5c;
+    margin-bottom: 50px;
+    margin-top: 1rem;
+    box-sizing: content-box;
+    overflow: visible;
+}
+.star-rating {
+    direction: rtl;
+    display: flex;
+    margin-top: -5px;
+    margin-right: 1010px;
+    margin-left: 85px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 1.3em;
+    color: #ddd;
+    cursor: pointer;
+}
+.star-rating input:checked~label {
+    color: #f5b301;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: #f5b301;
+}
+@media (max-width: 991px) {
+    .blocs{
+        width: 100%;
+    }
+    .descriptionDetaille{
+        width: 80%;
+    }
+    .trouver{
+        width: 70%;
+        padding-left: 100px;
+    }
+  }
+  @media (max-width: 480px) {
+    .blocs{
+        width: 100%;
+    }
+    .descriptionDetaille{
+        width: 80%;
+    }
+    .trouver{
+        width: 70%;
+        padding-left: 100px;
+    }
+  }
+  @media (max-width: 478px) {
+    .blocs{
+        width: 100%;
+    }
+    .descriptionDetaille{
+        width: 80%;
+    }
+    .trouver{
+        width: 80%;
+        padding-left: 120px;
+    }
+  }
