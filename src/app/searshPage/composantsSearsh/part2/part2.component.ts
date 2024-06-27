@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./part2.component.css']
 })
 export class Part2Component {
-  center: google.maps.LatLngLiteral = { lat: 37.7749, lng: -122.4194 }; 
-  zoom = 12;
+  center: google.maps.LatLngLiteral = { lat:33.8193879, lng: 10.8448079 }; 
+  zoom = 13;
 }

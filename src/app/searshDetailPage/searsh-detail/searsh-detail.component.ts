@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./searsh-detail.component.css']
 })
 export class SearshDetailComponent {
-
+  scrollVers(){
+    window.scrollTo({
+      top: 1000,
+      behavior: 'smooth'
+    });
+  }
 }

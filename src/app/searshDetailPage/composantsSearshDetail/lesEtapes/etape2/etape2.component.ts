@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./etape2.component.css']
 })
 export class Etape2Component {
-
+  verif:boolean=false
+  descrip(){
+    this.verif=true
+  }
 }

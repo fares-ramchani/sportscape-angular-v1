@@ -17,6 +17,7 @@ import { Section3Component } from './searshDetailPage/composantsSearshDetail/sec
 import { Etape1Component } from './searshDetailPage/composantsSearshDetail/lesEtapes/etape1/etape1.component';
 import { Etape2Component } from './searshDetailPage/composantsSearshDetail/lesEtapes/etape2/etape2.component';
 import { Etape3Component } from './searshDetailPage/composantsSearshDetail/lesEtapes/etape3/etape3.component';
+import { FleshTopComponent } from './flesh-top/flesh-top.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { Etape3Component } from './searshDetailPage/composantsSearshDetail/lesEt
     Section3Component,
     Etape1Component,
     Etape2Component,
-    Etape3Component
+    Etape3Component,
+    FleshTopComponent
   ],
   imports: [BrowserModule, AppRoutingModule, GoogleMapsModule],
   providers: [],

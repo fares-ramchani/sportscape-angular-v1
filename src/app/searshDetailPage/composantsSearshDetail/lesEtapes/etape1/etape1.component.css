@@ -1,17 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
 .container {
     width: 80%;
-    max-width: 1200px;
+    max-height: 630px;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 30px;
 }
 
 .steps {
@@ -67,35 +58,76 @@ body {
 .day.active {
     background-color: #e0f7fa;
 }
-
 .slots {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
 .slot {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
-    flex: 1;
-    margin-right: 10px;
-}
-
-.slot-time {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.slot-price {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
 
 .cancel-info {
     font-size: 12px;
     color: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-knob {
+    width: 18px;
+    height: 18px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    transition: all 0.3s;
+}
+
+.toggle.active .toggle-knob {
+    left: 20px;
+}*/
+
+.slot-time {
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-icon {
+    margin-right: 5px;
+}
+
+.slot-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
 }
 
 .next-step {
@@ -107,4 +139,5 @@ body {
     display: block;
     margin: 0 auto;
     font-size: 16px;
+    border-radius: 5px;
 }
