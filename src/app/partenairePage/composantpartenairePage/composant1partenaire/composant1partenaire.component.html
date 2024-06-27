@@ -32,42 +32,54 @@
                     <span style="font-weight: bold; margin-right: 4px;">Infos</span> générales de votre espace
                 </div>
                 <div class="content">
-                    <form novalidate>
+                    <form [formGroup]="partenaireForm" novalidate>
                         <div class="user-details">
                             <div class="input-box">
 
-                                <input type="text" placeholder="nom"  required>
-
+                                <input type="text" placeholder="nom" formControlName="nom" required>
+                                <small *ngIf="partenaireForm.controls['nom'].errors && partenaireForm.controls['nom'].touched"
+                                class="text-danger">
+                                {{getErrorsMessage('nom',partenaireForm.controls['nom'].errors)}}</small>
                             </div>
                             <div class="input-box">
 
-                                <input type="text" placeholder="code"  required>
-
+                                <input type="text" placeholder="code" formControlName="code" required>
+                                <small *ngIf="partenaireForm.controls['code'].errors && partenaireForm.controls['code'].touched"
+                                class="text-danger">
+                                {{getErrorsMessage('code',partenaireForm.controls['code'].errors)}}</small>
                             </div>
                         </div>
                         <div class="user-details">
                             <div class="input-box">
 
-                                <input type="text" placeholder="ville" required>
-
+                                <input type="text" placeholder="ville" formControlName="ville" required>
+                                <small *ngIf="partenaireForm.controls['ville'].errors && partenaireForm.controls['ville'].touched"
+                                class="text-danger">
+                                {{getErrorsMessage('ville',partenaireForm.controls['ville'].errors)}}</small>
                             </div>
                             <div class="input-box">
 
-                                <input type="text" placeholder="Adresse" required>
-
+                                <input type="text" placeholder="Adresse" formControlName="Adresse" required>
+                                <small *ngIf="partenaireForm.controls['Adresse'].errors && partenaireForm.controls['Adresse'].touched"
+                                class="text-danger">
+                                {{getErrorsMessage('Adresse',partenaireForm.controls['Adresse'].errors)}}</small>
                             </div>
                         </div>
                         <div class="user-details">
                             <div class="input-box">
 
-                                <input type="text" placeholder="Sélectionner ou taper une nouvelle activité"
+                                <input type="text" placeholder="Sélectionner ou taper une nouvelle activité" formControlName="activite"
                                     required>
-
+                                    <small *ngIf="partenaireForm.controls['activite'].errors && partenaireForm.controls['activite'].touched"
+                                    class="text-danger">
+                                    {{getErrorsMessage('activite',partenaireForm.controls['activite'].errors)}}</small>
                             </div>
                             <div class="input-box">
 
-                                <input type="text" placeholder="nombre max de joueur" required>
-
+                                <input type="text" placeholder="nombre max de joueur" formControlName="nombremax" required>
+                                <small *ngIf="partenaireForm.controls['nombremax'].errors && partenaireForm.controls['nombremax'].touched"
+                                class="text-danger">
+                                {{getErrorsMessage('nombremax',partenaireForm.controls['nombremax'].errors)}}</small>
                             </div>
                         </div>
                         <div class="user-details user-details2">
@@ -86,13 +98,17 @@
                         <div class="user-details">
                             <div class="input-box">
 
-                                <input type="text" placeholder="Tél. +216"  required>
-
+                                <input type="text" placeholder="Tél. +216" formControlName="telephone" required>
+                                <small *ngIf="partenaireForm.controls['telephone'].errors && partenaireForm.controls['telephone'].touched"
+                                class="text-danger">
+                                {{getErrorsMessage('telephone',partenaireForm.controls['telephone'].errors)}}</small>
                             </div>
                             <div class="input-box">
 
-                                <input type="text" placeholder="Email"  required>
-
+                                <input type="text" placeholder="Email" formControlName="mail" required>
+                                <small *ngIf="partenaireForm.controls['mail'].errors && partenaireForm.controls['mail'].touched"
+                                class="text-danger">
+                                {{getErrorsMessage('mail',partenaireForm.controls['mail'].errors)}}</small>
 
                             </div>
                         </div>

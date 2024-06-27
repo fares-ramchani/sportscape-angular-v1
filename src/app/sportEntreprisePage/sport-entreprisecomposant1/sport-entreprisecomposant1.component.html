@@ -49,29 +49,37 @@
                     <div class="title" style="margin-bottom: 30px; font-weight:bold; font-size: 16px; margin-top: 10px;">Contact
                         </div>
                     <div class="content">
-                        <form novalidate>
+                        <form [formGroup]="sportEntreprise" novalidate>
                             <div class="user-details">
                                 <div class="input-box">
                                    
                                     <input type="text" placeholder="Entreprise" formControlName="Entreprise" required>
-            
+                                    <small *ngIf="sportEntreprise.controls['Entreprise'].errors && sportEntreprise.controls['Entreprise'].touched"
+                                    class="text-danger">
+                                    {{getErrorsMessage('Entreprise',sportEntreprise.controls['Entreprise'].errors)}}</small>
                                 </div>
                                 <div class="input-box">
                                   
                                     <input type="text" placeholder="Responsable" formControlName="Responsable" required>
-            
+                                    <small *ngIf="sportEntreprise.controls['Responsable'].errors && sportEntreprise.controls['Responsable'].touched"
+                                    class="text-danger">
+                                    {{getErrorsMessage('Responsable',sportEntreprise.controls['Responsable'].errors)}}</small>
                                 </div>
                             </div>
                             <div class="user-details">
                                 <div class="input-box">
                                  
                                     <input type="text" placeholder="E-mail" formControlName="mail" required>
-            
+                                    <small *ngIf="sportEntreprise.controls['mail'].errors && sportEntreprise.controls['mail'].touched"
+                                    class="text-danger">
+                                    {{getErrorsMessage('mail',sportEntreprise.controls['mail'].errors)}}</small>
                                 </div>
                                 <div class="input-box">
                                     
-                                    <input type="text" placeholder="N°Tel" formControlName="tel" required>
-            
+                                    <input type="text" placeholder="N°Tel" formControlName="telephone" required>
+                                    <small *ngIf="sportEntreprise.controls['telephone'].errors && sportEntreprise.controls['telephone'].touched"
+                                    class="text-danger">
+                                    {{getErrorsMessage('telephone',sportEntreprise.controls['telephone'].errors)}}</small>
                                 </div>
                             </div>
                             <div style="margin-bottom: 30px; font-weight:lighter; font-size: 16px; margin-top: 10px;"><span style="font-weight: bold;">Info générales </span><br>
@@ -81,7 +89,9 @@
                             <div class="user-details user-details2" style="margin-bottom: 20px;">
                                 <div class="input-box">
                                     <input type="text" placeholder="Activité sportive" formControlName="ActivitéSportive" required>
-            
+                                    <small *ngIf="sportEntreprise.controls['ActivitéSportive'].errors && sportEntreprise.controls['ActivitéSportive'].touched"
+                                    class="text-danger">
+                                    {{getErrorsMessage('ActivitéSportive',sportEntreprise.controls['ActivitéSportive'].errors)}}</small>
                                 </div>
             
             
@@ -89,7 +99,6 @@
                             <div class="user-details user-details2">
                                 <div class="input-box">
                               <textarea placeholder="tapez vos adresses souhaités, nombre des séances par semaine,les horaires préférés ainsi que la période de la convention  " name="" id="" style="width: 100%; height: 60px;"></textarea>
-            
                                 </div>
             
             
