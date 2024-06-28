@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./etape1.component.css']
 })
 export class Etape1Component {
+  
+  currentSection: string = 'etape1';
 
+  navigateTo(section: string) {
+    this.currentSection = section;
+  }
 }

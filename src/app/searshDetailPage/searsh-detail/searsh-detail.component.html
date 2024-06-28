@@ -1,5 +1,103 @@
 <app-navbar></app-navbar>
 <app-section1></app-section1>
 <app-section2></app-section2>
+<div class="fixed-buttons">
+    <button class="btn reserver" (click)="scrollVers()">Réserver</button>
+    <button class="btn share" data-toggle="modal" data-target="#exampleModalCenter"><img src="assets/images/searshDetail/section1/share.png"></button>
+</div>
+<app-flesh-top></app-flesh-top>
 <app-section3></app-section3>
 <app-footer></app-footer>
+<!--modal contact-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" style="color: black;">Partagez avec des proches</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" style="padding-left: 16px;">
+                    <div class="col-4 logo-establishment-section">
+                        <img alt="logo" style="width: 100%;margin-left: -10%;height: 100%;" src="assets/images/searshDetail/section1/8270.jpg"
+                            class="ng-star-inserted">
+                    </div>
+                    <div class="col-8 info-establishment-section">
+                        <p class="name">Soccer Club - SC1</p>
+                        <p class="adress">Route de Raoued km 8</p>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-top: 30px;padding: 10px;">
+                    <div class="card-section">
+                        <div class="social-media-card">
+                            <button class="share-btn">
+                                <div class="_5kaapu">
+                                    <div class="_1l9dusq"><img src="assets/images/searshDetail/section1/copie le lien.png" style="display: block; height: 32px; width: 32px; fill: currentcolor;"></div>
+                                    <div class="_1xzp9wc">Copier le lien</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-section">
+                        <div class="social-media-card">
+                            <button class="share-btn">
+                                <div class="_5kaapu">
+                                    <div class="_1l9dusq"><img src="assets/images/searshDetail/section1/facebook.png" style="display: block; height: 32px; width: 32px; fill: currentcolor;"></div>
+                                    <div class="_1xzp9wc">Facebook</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-section">
+                        <div class="social-media-card">
+                            <button class="share-btn">
+                                <div class="_5kaapu">
+                                    <div class="_1l9dusq"><img src="assets/images/searshDetail/section1/messenger.png" style="display: block; height: 32px; width: 32px; fill: currentcolor;"></div>
+                                    <div class="_1xzp9wc">Messenger</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-section">
+                        <div class="social-media-card">
+                            <button class="share-btn">
+                                <div class="_5kaapu">
+                                    <div class="_1l9dusq"><img src="assets/images/searshDetail/section1/twitter.png" style="display: block; height: 32px; width: 32px; fill: currentcolor;"></div>
+                                    <div class="_1xzp9wc">Twitter</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-section">
+                        <div class="social-media-card">
+                            <button class="share-btn">
+                                <div class="_5kaapu">
+                                    <div class="_1l9dusq"><img src="assets/images/searshDetail/section1/whatsapp.png" style="display: block; height: 32px; width: 32px; fill: currentcolor;"></div>
+                                    <div class="_1xzp9wc">WhatsApp</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-section">
+                        <div class="social-media-card">
+                            <button class="share-btn">
+                                <div class="_5kaapu">
+                                    <div class="_1l9dusq"><img src="assets/images/searshDetail/section1/reddit.png" style="display: block; height: 32px; width: 32px; fill: currentcolor;"></div>
+                                    <div class="_1xzp9wc">Reddit</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn" style="background-color: #7f7f7f;"><i class="bi bi-x-circle" style="padding-right: 4px;"></i>Annuler</button>
+            </div>
+        </div>
+    </div>
+</div>

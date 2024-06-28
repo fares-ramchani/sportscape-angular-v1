@@ -40,6 +40,7 @@ import { SinupComponent } from './sinupPage/sinup/sinup.component';
 import { SportEntrepriseComponent } from './sportEntreprisePage/sport-entreprise/sport-entreprise.component';
 import { SportEntreprisecomposant1Component } from './sportEntreprisePage/sport-entreprisecomposant1/sport-entreprisecomposant1.component';
 import { SportEntreprisecomposant2Component } from './sportEntreprisePage/sport-entreprisecomposant2/sport-entreprisecomposant2.component';
+import { FleshTopComponent } from './flesh-top/flesh-top.component';
 
 @NgModule({
   declarations: [
@@ -77,14 +78,15 @@ import { SportEntreprisecomposant2Component } from './sportEntreprisePage/sport-
     Section3Component,
     Etape1Component,
     Etape2Component,
-    Etape3Component
+    Etape3Component,
+    FleshTopComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     GoogleMapsModule,
-    FormsModule,
-    ReactiveFormsModule
+     FormsModule,
+     ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

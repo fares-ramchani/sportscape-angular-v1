@@ -1,1 +1,18 @@
-<p>section2 works!</p>
+<!-- <nav>
+    <ul>
+        <li><button (click)="navigateTo('etape1')">Choix de Sport</button></li>
+        <li><button (click)="navigateTo('etape2')">Login</button></li>
+        <li><button (click)="navigateTo('etape3')">Paiement</button></li>
+    </ul>
+</nav> -->
+<div class="container">
+    <div *ngIf="currentSection === 'etape1'">
+        <app-etape1></app-etape1>
+    </div>
+    <div *ngIf="currentSection === 'etape2'">
+        <app-etape2></app-etape2>
+    </div>
+    <div *ngIf="currentSection === 'etape3'">
+        <app-etape3></app-etape3>
+    </div>
+</div>
