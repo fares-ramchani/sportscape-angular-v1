@@ -20,7 +20,6 @@ const routes: Routes = [
   { path: 'partenaire', component: PartenaireComponent },
   { path: 'accueil', component: AccueilComponent },
   { path: 'search/list', component: SearshComponent },
-  { path: 'c', component: SearshDetailComponent },
   { path: 'etape1', component: Etape1Component },
   { path: 'etape3', component: Etape3Component },
   { path: 'etape2', component: Etape2Component },

@@ -149,3 +149,13 @@ p {
 .btn.share {
     background-color: #ff9800;
 }
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+}
+.modal-header > button {
+    width:30px;
+    height:30px;
+    border-radius: 40%;
+    border:#5c5c5c;
+}
