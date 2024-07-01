@@ -1,5 +1,6 @@
 import {
   CUSTOM_ELEMENTS_SCHEMA,
+  LOCALE_ID,
   NgModule,
   NO_ERRORS_SCHEMA,
 } from '@angular/core';
@@ -45,6 +46,11 @@ import { SportEntrepriseComponent } from './sportEntreprisePage/sport-entreprise
 import { SportEntreprisecomposant1Component } from './sportEntreprisePage/sport-entreprisecomposant1/sport-entreprisecomposant1.component';
 import { SportEntreprisecomposant2Component } from './sportEntreprisePage/sport-entreprisecomposant2/sport-entreprisecomposant2.component';
 import { FleshTopComponent } from './flesh-top/flesh-top.component';
+import { CalendrierComponent } from './searshDetailPage/composantsSearshDetail/lesEtapes/calendrier/calendrier.component';
+import { MapComponent } from './map/map.component';
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+registerLocaleData(localeFr);
 
 @NgModule({
   declarations: [
@@ -84,6 +90,8 @@ import { FleshTopComponent } from './flesh-top/flesh-top.component';
     Etape2Component,
     Etape3Component,
     FleshTopComponent,
+    CalendrierComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -92,7 +100,7 @@ import { FleshTopComponent } from './flesh-top/flesh-top.component';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'fr-FR' }],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
 })

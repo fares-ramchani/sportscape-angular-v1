@@ -1,5 +1,5 @@
-<!-- <section class="container">
-    <img src="assets/images/searshDetail/section1/8324.jpg" alt="Image de fond" class="background-image">
+<section class="container">
+    <img src="assets/images/searshDetail/section1/8324.jpg" alt="Image de fond" class="background-image" (click)="openCarousel(0)" class="img-thumbnail">
     <img src="assets/images/searshDetail/section1/8270.jpg" alt="Image de premier plan" class="foreground-image">
 </section>
 <section class="container">
@@ -62,94 +62,10 @@
 
         <div class="rightSection">
             <div class="bolocImages">
-                <div class="image"><img src="assets/images/searshDetail/section1/6158.jpg"></div>
-                <div class="image"><img src="assets/images/searshDetail/section1/6159.jpg"></div>
-                <div class="image"><img src="assets/images/searshDetail/section1/6161.jpg"></div>
-                <div class="image"><img src="assets/images/searshDetail/section1/54436.jpg"></div>
-            </div>
-            <p class="description">🥅Dimensions du terrain : 50x30📐 De 8h à 00h notre espace est ouvert chaque jour
-                pour vous offrir une expérience mémorable avec votre sport préféré⚽.</p>
-        </div>
-    </div>
-    <div class="section3">
-        <div class="s1"></div>
-        <div class="s2">
-            <button>
-                <img src="assets/images/searshDetail/section1/adresse.png" wi>
-            </button>
-        </div>
-    </div>
-    <hr class="ligne">
-</section> -->
-
-<section class="container">
-    <img src="assets/images/searshDetail/section1/8324.jpg" alt="Image de fond" class="background-image">
-    <img src="assets/images/searshDetail/section1/8270.jpg" alt="Image de premier plan" class="foreground-image">
-</section>
-<section class="container">
-    <div class="f">
-        <div class="left">
-            <div class="vertical-line"></div>
-            <div class="phrase"><strong>Happy Land - 02</strong><br>
-                <div class="star-rating">
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">★</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
-                        title="2 stars">★</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"
-                        title="3 stars">★</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
-                        title="4 stars">★</label>
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5"
-                        title="5 stars">★</label>
-                </div>
-            </div>
-        </div>
-        <div class="detailP">
-            <div class="d1">à partir de </div>
-            <div class="d1">
-                <div class="prix">72<span style="font-size: 12px;margin-left: 10px;">DT</span></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section2">
-
-        <div class="leftSection">
-
-            <div style="height: 50px;" class="bloc">
-                <img src="assets/images/searshDetail/section1/location.png" width="30px" height="35px">
-                <div class="description">BEN AROUS</div>
-            </div>
-
-            <div style="height: 50px;" class="bloc">
-                <img src="assets/images/searshDetail/section1/foot.png" width="30px" height="30px">
-                <div class="description">FOOTBALL</div>
-            </div>
-
-            <div style="height: 50px;" class="bloc">
-                <img src="assets/images/searshDetail/section1/horloge.png" width="33px" height="33px">
-                <div class="description">90 min</div>
-            </div>
-
-            <div style="height: 50px;" class="bloc">
-                <img src="assets/images/searshDetail/section1/participants.png" width="35px" height="30px">
-                <div class="description">14 Participants</div>
-            </div>
-
-            <div style="height: 50px;" class="bloc">
-                <img src="assets/images/searshDetail/section1/open.png" width="35px" height="30px">
-                <div class="description">7:00 - 23:59</div>
-            </div>
-
-        </div>
-
-
-        <div class="rightSection">
-            <div class="bolocImages">
-                <div class="image"><img src="assets/images/searshDetail/section1/6158.jpg"></div>
-                <div class="image"><img src="assets/images/searshDetail/section1/6159.jpg"></div>
-                <div class="image"><img src="assets/images/searshDetail/section1/6161.jpg"></div>
-                <div class="image"><img src="assets/images/searshDetail/section1/54436.jpg"></div>
+                <div class="image"><img src="assets/images/searshDetail/section1/6158.jpg" (click)="openCarousel(1)" class="img-thumbnail"></div>
+                <div class="image"><img src="assets/images/searshDetail/section1/6159.jpg" (click)="openCarousel(2)" class="img-thumbnail"></div>
+                <div class="image"><img src="assets/images/searshDetail/section1/6161.jpg" (click)="openCarousel(3)" class="img-thumbnail"></div>
+                <div class="image"><img src="assets/images/searshDetail/section1/54436.jpg" (click)="openCarousel(4)" class="img-thumbnail"></div>
             </div>
             <p class="description">🥅 Dimensions du terrain : 50x30📐 De 8h à 00h notre espace est ouvert chaque jour
                 pour vous offrir une expérience mémorable avec votre sport préféré ⚽.</p>
@@ -158,7 +74,7 @@
     <div class="section3">
         <div class="s1"></div>
         <div class="s2">
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">
                 <img src="assets/images/searshDetail/section1/adresse.png" wi>
             </button>
         </div>
@@ -166,19 +82,13 @@
     <hr class="ligne">
 </section>
 
-
-<!-- <button class="ajouter" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
-
 <!--modal google map-->
-<div class="modal fade bd-example-modal-lg" tabindex="1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="exampleModal">
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Où se situe</h5>
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <h5 class="modal-title" id="exampleModalLongTitle" style="color: black;">Où se situe</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="map">
@@ -192,3 +102,15 @@
         </div>
       </div>
   </div>
+
+  <!--modal carrousel-->
+  <div class="modal" [class.show]="isCarouselOpen">
+    <span class="close" (click)="closeCarousel()" id="myClose">&times;</span>
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="carousel">
+        <img *ngFor="let image of images; let i = index" [src]="image" [class.active]="i === currentIndex">
+    </div>
+    <a class="prev" (click)="changeSlide(-1)">&#10094;</a>
+    <a class="next" (click)="changeSlide(1)">&#10095;</a>
+  </div>
+</div>

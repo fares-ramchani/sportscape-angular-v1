@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-etape3',
   templateUrl: './etape3.component.html',
-  styleUrls: ['./etape3.component.css'],
+  styleUrls: ['./etape3.component.css']
 })
 export class Etape3Component implements OnInit {
   public etape3Form!: FormGroup;
@@ -38,5 +38,9 @@ export class Etape3Component implements OnInit {
 
   navigateTo(section: string) {
     this.currentSection = section;
+  }
+  verif:boolean=false
+  descrip(){
+    this.verif=!this.verif
   }
 }

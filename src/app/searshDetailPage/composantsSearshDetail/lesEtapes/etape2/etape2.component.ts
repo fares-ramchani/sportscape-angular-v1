@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class Etape2Component {
   verif: boolean = false;
   descrip() {
-    this.verif = true;
+    this.verif = !this.verif;
   }
   
   currentSection: string = 'etape2';
