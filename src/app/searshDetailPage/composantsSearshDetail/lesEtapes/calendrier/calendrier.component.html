@@ -1,0 +1,15 @@
+<div class="calendar-container">
+    <div class="header">
+        <button (click)="previousWeek()"><img src="assets/images/searshDetail/section1/left.png"></button>
+        <span>{{ currentMonth }} {{ currentYear }}</span>
+        <button (click)="nextWeek()"><img src="assets/images/searshDetail/section1/right.png"></button>
+      </div>
+      <div class="weekdays">
+        <div *ngFor="let day of weekDays">
+            <button class="jour">
+          <div>{{ day.name }}</div>
+          <div>{{ day.date | date: 'd MMMM' }}</div>
+        </button>
+        </div>
+      </div>
+  </div>

@@ -1,15 +1,15 @@
-<div class="container">
+<!-- <div class="container">
     <div class="centered-container">
         <form class="form-container">
             <select name="dropdown1" id="dropdown1">
-                <option value="" selected></option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
+                <option value="" selected class="options"></option>
+                <option value="option1" class="options">Option 1</option>
+                <option value="option2" class="options">Option 2</option>
             </select>
             <select name="dropdown2" id="dropdown2">
-                <option value="" selected><input type="text"></option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
+                <option value="" selected class="options"><input type="text"></option>
+                <option value="option1" class="options">Option 1</option>
+                <option value="option2" class="options">Option 2</option>
             </select>
        <div class="p2">
             <div><input type="date" name="date" id="date"></div>
@@ -18,4 +18,50 @@
         </div>
         </form>
     </div>
-</div> 
+</div>  -->
+
+<div class="main">
+    <div class="container">
+        <div class="buttom">
+            <form [formGroup]="formulaireaccueilForm" novalidate>
+                <div class="form-group">
+                    <div class="form1">
+                        <p>Gouvernorat</p>
+                        <select class="form-control" formControlName="Gouvernorat">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <small *ngIf="formulaireaccueilForm.controls['Gouvernorat'].errors && formulaireaccueilForm.controls['Gouvernorat'].touched"
+                                class="text-danger">
+                                {{getErrorsMessage('Gouvernorat',formulaireaccueilForm.controls['Gouvernorat'].errors)}}</small>
+                    </div>
+                    <div class="form2">
+                        <div style="width: 70%;">
+                            <p>Activité</p>
+                            <select class="form-control" formControlName="Activite">
+                                <option>FOOTBALL</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <small *ngIf="formulaireaccueilForm.controls['Activite'].errors && formulaireaccueilForm.controls['Activite'].touched"
+                                class="text-danger">
+                                {{getErrorsMessage('Activite',formulaireaccueilForm.controls['Activite'].errors)}}</small>
+                        </div>
+                        <div style="width: 25%;">
+                            <p>Quand ?</p>
+                            <input type="date" value="2024-06-17" min="2024-06-17" max="2030-12-31">
+                        </div>
+                    </div>
+                    <div>
+                        <button><img src="assets/images/searsh/part1/search.png">Recherche</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

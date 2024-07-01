@@ -6,8 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./etape2.component.css']
 })
 export class Etape2Component {
-  verif:boolean=false
-  descrip(){
-    this.verif=true
+  verif: boolean = false;
+  descrip() {
+    this.verif = !this.verif;
+  }
+  
+  currentSection: string = 'etape2';
+
+  navigateTo(section: string) {
+    this.currentSection = section;
   }
 }

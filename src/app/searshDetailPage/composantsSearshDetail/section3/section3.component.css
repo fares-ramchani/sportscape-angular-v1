@@ -49,8 +49,8 @@ button img{
     overflow: clip;
 }
 .blocs{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 5px;
     margin: 0;
     width: 60%;
@@ -114,19 +114,32 @@ button img{
 }
 @media (max-width: 991px) {
     .blocs{
-        width: 100%;
+        max-width: 100px;
     }
     .descriptionDetaille{
         width: 80%;
     }
     .trouver{
         width: 70%;
-        padding-left: 100px;
+        padding-left: 150px;
+    }
+  }
+  @media (max-width: 914px) {
+    .blocs{
+        width: 65%;
+        max-width: 100px;
+    }
+    .descriptionDetaille{
+        min-width: 250px;
+    }
+    .trouver{
+        width: 35%;
+        padding-left: 70px;
     }
   }
   @media (max-width: 480px) {
     .blocs{
-        width: 100%;
+        width: 50%;
     }
     .descriptionDetaille{
         width: 80%;
@@ -138,7 +151,7 @@ button img{
   }
   @media (max-width: 478px) {
     .blocs{
-        width: 100%;
+        width: 40%;
     }
     .descriptionDetaille{
         width: 80%;

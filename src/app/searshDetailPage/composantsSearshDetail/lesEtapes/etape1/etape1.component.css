@@ -1,8 +1,179 @@
+/* .container {
+  width: 80%;
+  max-height: 630px;
+  border: 1px solid #ccc;
+  padding: 30px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step {
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  border-bottom: 2px solid #ccc;
+}
+
+.step.active {
+  border-bottom: 2px solid #325a0e;
+  color: #325a0e;
+}
+
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.month {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.day.active {
+  background-color: #e0f7fa;
+}
+.slots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.slot {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cancel-info {
+  font-size: 12px;
+  color: #888;
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-check-input {
+  height: 23px;
+  width: 40px;
+  margin-left: -60px;
+}
+.form-check-input:checked {
+  background-color: green;
+}
+
+.slot-time {
+  font-size: 16px;
+  margin: 10px 10px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.clock-icon {
+  margin-right: 5px;
+}
+
+.slot-price {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  width: 35%;
+  padding-top: 10px;
+  padding-left: 6px;
+  margin-left: 60%;
+  height: 40px;
+  text-align: left;
+  background-color: #6c757d;
+}
+
+.next-step {
+  background-color: #325a0e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.step-navigation {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: -10px;
+  padding-top: 100px;
+}
+.step-navigation > button {
+margin-bottom :-65px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}  
+.msg {
+  line-height: 1;
+  font-size: 10px;
+}
+.bi-alarm {
+  margin-right: 6px;
+}
+
+.step > button {
+  background-color: transparent;
+  border: none;
+}
+.etape1{
+  padding-bottom: -100px;
+} */
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .container {
     width: 80%;
-    max-height: 630px;
+    max-width: 1200px;
     border: 1px solid #ccc;
-    padding: 30px;
+    padding: 20px;
 }
 
 .steps {
@@ -58,76 +229,35 @@
 .day.active {
     background-color: #e0f7fa;
 }
+
 .slots {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    gap: 10px;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .slot {
     border: 1px solid #ccc;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+    flex: 1;
+    margin-right: 10px;
 }
-
-.cancel-info {
-    font-size: 12px;
-    color: #888;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/*
-.toggle {
-    width: 40px;
-    height: 20px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.toggle-knob {
-    width: 18px;
-    height: 18px;
-    background-color: green;
-    border-radius: 50%;
-    position: absolute;
-    left: 2px;
-    transition: all 0.3s;
-}
-
-.toggle.active .toggle-knob {
-    left: 20px;
-}*/
 
 .slot-time {
     font-size: 16px;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.clock-icon {
-    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .slot-price {
     font-size: 20px;
     font-weight: bold;
-    color: green;
+    margin-bottom: 5px;
+}
+
+.cancel-info {
+    font-size: 12px;
+    color: #888;
 }
 
 .next-step {
@@ -139,5 +269,187 @@
     display: block;
     margin: 0 auto;
     font-size: 16px;
-    border-radius: 5px;
+} */
+.container {
+  width: 80%;
+  max-height: 630px;
+  border: 1px solid #ccc;
+  padding: 30px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step {
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  border-bottom: 2px solid #ccc;
+}
+
+.step.active {
+  border-bottom: 2px solid #325a0e;
+  color: #325a0e;
+}
+
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.month {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.day.active {
+  background-color: #e0f7fa;
+}
+.slots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.slot {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cancel-info {
+  font-size: 12px;
+  color: #888;
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+.toggle-knob {
+       position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}*/
+.toggle{
+width: 35%;
+padding-right: 20px;
+padding-left: 15px;
+}
+.form-check-input {
+  height: 23px;
+  width: 40px;
+  padding-left: 100%;
+}
+.form-check-input:checked {
+  background-color: green;
+}
+
+.slot-time {
+  font-size: 16px;
+  margin: 10px 10px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.clock-icon {
+  margin-right: 5px;
+}
+
+.slot-price {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  width: 35%;
+  padding-top: 10px;
+  padding-left: 6px;
+  margin-left: 60%;
+  height: 40px;
+  text-align: left;
+  background-color: #6c757d;
+}
+
+.next-step {
+  background-color: #325a0e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.step-navigation {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: -10px;
+  padding-top: 100px;
+}
+.step-navigation > button {
+margin-bottom :-65px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}  
+.msg {
+  line-height: 1;
+  font-size: 10px;
+  width: 50%;
+}
+.bi-alarm {
+  margin-right: 6px;
+}
+
+.step > button {
+  background-color: transparent;
+  border: none;
+}
+.etape1{
+ padding-bottom: -100px;
+}
+@media screen and (max-width: 991px) {
+  .slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
 }

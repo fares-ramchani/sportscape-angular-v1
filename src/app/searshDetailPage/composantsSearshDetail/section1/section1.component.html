@@ -1,5 +1,5 @@
 <section class="container">
-    <img src="assets/images/searshDetail/section1/8324.jpg" alt="Image de fond" class="background-image">
+    <img src="assets/images/searshDetail/section1/8324.jpg" alt="Image de fond" class="background-image" (click)="openCarousel(0)" class="img-thumbnail">
     <img src="assets/images/searshDetail/section1/8270.jpg" alt="Image de premier plan" class="foreground-image">
 </section>
 <section class="container">
@@ -62,10 +62,10 @@
 
         <div class="rightSection">
             <div class="bolocImages">
-                <div class="image"><img src="assets/images/searshDetail/section1/6158.jpg"></div>
-                <div class="image"><img src="assets/images/searshDetail/section1/6159.jpg"></div>
-                <div class="image"><img src="assets/images/searshDetail/section1/6161.jpg"></div>
-                <div class="image"><img src="assets/images/searshDetail/section1/54436.jpg"></div>
+                <div class="image"><img src="assets/images/searshDetail/section1/6158.jpg" (click)="openCarousel(1)" class="img-thumbnail"></div>
+                <div class="image"><img src="assets/images/searshDetail/section1/6159.jpg" (click)="openCarousel(2)" class="img-thumbnail"></div>
+                <div class="image"><img src="assets/images/searshDetail/section1/6161.jpg" (click)="openCarousel(3)" class="img-thumbnail"></div>
+                <div class="image"><img src="assets/images/searshDetail/section1/54436.jpg" (click)="openCarousel(4)" class="img-thumbnail"></div>
             </div>
             <p class="description">🥅 Dimensions du terrain : 50x30📐 De 8h à 00h notre espace est ouvert chaque jour
                 pour vous offrir une expérience mémorable avec votre sport préféré ⚽.</p>
@@ -74,7 +74,7 @@
     <div class="section3">
         <div class="s1"></div>
         <div class="s2">
-            <button data-toggle="modal" data-target=".bd-example-modal-lg">
+            <button data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">
                 <img src="assets/images/searshDetail/section1/adresse.png" wi>
             </button>
         </div>
@@ -87,10 +87,8 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Où se situe</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <h5 class="modal-title" id="exampleModalLongTitle" style="color: black;">Où se situe</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="map">
@@ -99,8 +97,20 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" style="background-color: #ffc107;color: black;border-radius: 5px;border: none;width: 15%;height: 40px;" data-dismiss="modal">Close</button>
+            <button type="button" style="background-color: #ffc107;color: black;border-radius: 5px;border: none;width: 15%;height: 40px;" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
   </div>
+
+  <!--modal carrousel-->
+  <div class="modal" [class.show]="isCarouselOpen">
+    <span class="close" (click)="closeCarousel()" id="myClose">&times;</span>
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="carousel">
+        <img *ngFor="let image of images; let i = index" [src]="image" [class.active]="i === currentIndex">
+    </div>
+    <a class="prev" (click)="changeSlide(-1)">&#10094;</a>
+    <a class="next" (click)="changeSlide(1)">&#10095;</a>
+  </div>
+</div>

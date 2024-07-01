@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GoogleMapsModule } from '@angular/google-maps';
 
@@ -17,7 +17,13 @@ import { Section3Component } from './searshDetailPage/composantsSearshDetail/sec
 import { Etape1Component } from './searshDetailPage/composantsSearshDetail/lesEtapes/etape1/etape1.component';
 import { Etape2Component } from './searshDetailPage/composantsSearshDetail/lesEtapes/etape2/etape2.component';
 import { Etape3Component } from './searshDetailPage/composantsSearshDetail/lesEtapes/etape3/etape3.component';
+import { CalendrierComponent } from './searshDetailPage/composantsSearshDetail/lesEtapes/calendrier/calendrier.component';
 import { FleshTopComponent } from './flesh-top/flesh-top.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MapComponent } from './map/map.component';
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+registerLocaleData(localeFr);
 
 @NgModule({
   declarations: [
@@ -34,10 +40,20 @@ import { FleshTopComponent } from './flesh-top/flesh-top.component';
     Etape1Component,
     Etape2Component,
     Etape3Component,
-    FleshTopComponent
+    FleshTopComponent,
+    MapComponent,
+    CalendrierComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    GoogleMapsModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'fr-FR' }
+  ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

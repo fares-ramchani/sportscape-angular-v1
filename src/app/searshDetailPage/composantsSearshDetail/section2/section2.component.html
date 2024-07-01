@@ -1,1 +1,11 @@
-<app-etape2></app-etape2>
+<div class="container">
+    <div *ngIf="currentSection === 'etape1'">
+        <app-etape1></app-etape1>
+    </div>
+    <div *ngIf="currentSection === 'etape2'">
+        <app-etape2></app-etape2>
+    </div>
+    <div *ngIf="currentSection === 'etape3'">
+        <app-etape3></app-etape3>
+    </div>
+</div>

@@ -17,7 +17,7 @@
 .logo-establishment-section img{
     border-radius: 10px;
 }
-img {
+._1l9dusq img {
     border-style: none;
     vertical-align: middle;
 }
@@ -126,14 +126,24 @@ p {
 }
 
 .btn {
-    padding: 10px 20px;
-    background-color: #72b438;
+   /* padding: 10px 20px;
+    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transform: rotateY(315deg);
+    transform: rotateY(315deg);*/
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    transform: rotateY(45deg);
 }
 
 .btn.share {
